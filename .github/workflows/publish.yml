@@ -18,26 +18,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
-
-      - name: Set up node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: https://registry.npmjs.org/
-
-      - name: Publish packages
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@zenz-solutions"
+      - run: npm ci
+      - run: | 
+            cd packages
+            for package in */; do
+              cd "$package"
+              npm publish || true
+              sleep 10
+              cd ..
+            done
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
-        run: |
-          cd packages
-
-          echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" > .npmrc
-
-          for package in */; do
-            cd "$package"
-            npm publish || true
-            sleep 10
-            cd ..
-          done
+          NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}

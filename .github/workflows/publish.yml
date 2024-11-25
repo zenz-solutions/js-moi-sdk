@@ -26,7 +26,7 @@ jobs:
           node-version: 16
           registry-url: "https://npm.pkg.github.com"
           scope: "@zenz-solutions"
-      - run: npm ci
+      - run: npm i
       - run: | 
             cd packages
             for package in */; do

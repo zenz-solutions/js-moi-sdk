@@ -1,19 +1,22 @@
 {
-  "name": "js-moi-providers",
+  "name": "@zenz-solutions/js-moi-providers",
   "version": "0.6.1-sephorum",
   "description": "Module to connect and interact with MOI network",
   "main": "./lib.cjs/index.js",
   "module": "./lib.esm/index.js",
+  "publishConfig": {
+    "@zenz-solutions:registry": "https://npm.pkg.github.com"
+   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "homepage": "https://docs.moi.technology/docs/build/packages/js-moi-sdk",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sarvalabs/js-moi-sdk.git"
+    "url": "git://github.com/zenz-solutions/js-moi-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/sarvalabs/js-moi-sdk/issues"
+    "url": "https://github.com/zenz-solutions/js-moi-sdk/issues"
   },
   "keywords": [
     "moichain",
@@ -25,9 +28,9 @@
   "dependencies": {
     "cross-fetch": "^4.0.0",
     "events": "npm:events@^3.3.0",
-    "js-moi-manifest": "0.6.1-sephorum",
+    "@zenz-solutions/js-moi-manifest": "0.6.1-sephorum",
     "crypto": "npm:crypto-browserify",
-    "js-moi-utils": "0.6.1-sephorum",
+    "@zenz-solutions/js-moi-utils": "0.6.1-sephorum",
     "websocket": "^1.0.35"
   },
   "devDependencies": {

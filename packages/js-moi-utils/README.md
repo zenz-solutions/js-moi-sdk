@@ -1,8 +1,8 @@
 ![image](https://moi-js.s3.amazonaws.com/moi-banner.png)
 
-[latestrelease]: https://github.com/sarvalabs/js-moi-sdk/releases/latest
-[issueslink]: https://github.com/sarvalabs/js-moi-sdk/issues
-[pullslink]: https://github.com/sarvalabs/js-moi-sdk/pulls
+[latestrelease]: https://github.com/zenz-solutions/js-moi-sdk/releases/latest
+[issueslink]: https://github.com/zenz-solutions/js-moi-sdk/issues
+[pullslink]: https://github.com/zenz-solutions/js-moi-sdk/pulls
 [pkgdocs]: https://docs.moi.technology/docs/build/packages/js-moi-sdk
 
 [![docs](https://img.shields.io/badge/npm-documentation-red?style=for-the-badge)][pkgdocs]
@@ -17,12 +17,12 @@
 
 # js-moi-utils
 
-This is a sub-package of [js-moi-sdk](https://github.com/sarvalabs/js-moi-sdk).
+This is a sub-package of [js-moi-sdk](https://github.com/zenz-solutions/js-moi-sdk).
 
 The **js-moi-utils** package offers a comprehensive set of tools and functions to enhance development with MOI. It provides utility functions that simplify common tasks, making your development experience smoother and more efficient.
 
 ## Installation
-Install the latest [release](https://github.com/sarvalabs/js-moi-sdk/releases) using the following command.
+Install the latest [release](https://github.com/zenz-solutions/js-moi-sdk/releases) using the following command.
 
 ```sh
 npm install js-moi-utils
@@ -31,7 +31,7 @@ npm install js-moi-utils
 ## Usage
 
 ```javascript
-    import { isValidAddress } from "js-moi-utils";
+    import { isValidAddress } from "@zenz-solutions/js-moi-utils";
 
     const isValid = isValidAddress("0xd210e094cd2432ef7d488d4310759b6bd81a0cda35a5fcce3dab87c0a841bdba")
     console.log(isValid)

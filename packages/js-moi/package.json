@@ -1,19 +1,22 @@
 {
-  "name": "js-moi-sdk",
+  "name": "@zenz-solutions/js-moi-sdk",
   "version": "0.6.1-sephorum",
   "description": "A feature-rich library designed to seamlessly interact with the MOI Protocol.",
   "main": "./lib.cjs/index.js",
   "module": "./lib.esm/index.js",
+  "publishConfig": {
+    "@zenz-solutions:registry": "https://npm.pkg.github.com"
+   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "homepage": "https://docs.moi.technology/docs/build/packages/js-moi-sdk",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sarvalabs/js-moi-sdk.git"
+    "url": "git://github.com/zenz-solutions/js-moi-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/sarvalabs/js-moi-sdk/issues"
+    "url": "https://github.com/zenz-solutions/js-moi-sdk/issues"
   },
   "keywords": [
     "moichain",
@@ -23,14 +26,14 @@
   "author": "Sarva Labs Inc. & MOI Protocol Developers",
   "license": "Apache-2.0 OR MIT",
   "dependencies": {
-    "js-moi-providers": "0.6.1-sephorum",
-    "js-moi-manifest": "0.6.1-sephorum",
-    "js-moi-logic": "0.6.1-sephorum",
-    "js-moi-hdnode": "0.6.1-sephorum",
-    "js-moi-wallet": "0.6.1-sephorum",
-    "js-moi-signer": "0.6.1-sephorum",
-    "js-moi-bip39": "0.6.1-sephorum",
-    "js-moi-constants": "0.6.1-sephorum",
-    "js-moi-utils": "0.6.1-sephorum"
+    "@zenz-solutions/js-moi-providers": "0.6.1-sephorum",
+    "@zenz-solutions/js-moi-manifest": "0.6.1-sephorum",
+    "@zenz-solutions/js-moi-logic": "0.6.1-sephorum",
+    "@zenz-solutions/js-moi-hdnode": "0.6.1-sephorum",
+    "@zenz-solutions/js-moi-wallet": "0.6.1-sephorum",
+    "@zenz-solutions/js-moi-signer": "0.6.1-sephorum",
+    "@zenz-solutions/js-moi-bip39": "0.6.1-sephorum",
+    "@zenz-solutions/js-moi-constants": "0.6.1-sephorum",
+    "@zenz-solutions/js-moi-utils": "0.6.1-sephorum"
   }
 }

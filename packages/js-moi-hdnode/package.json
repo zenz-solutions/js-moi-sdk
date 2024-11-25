@@ -1,19 +1,22 @@
 {
-  "name": "js-moi-hdnode",
+  "name": "@zenz-solutions/js-moi-hdnode",
   "version": "0.6.1-sephorum",
   "description": "BIP32 HD Node for cryptocurrency key management.",
   "main": "./lib.cjs/index.js",
   "module": "./lib.esm/index.js",
+  "publishConfig": {
+    "@zenz-solutions:registry": "https://npm.pkg.github.com"
+   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "homepage": "https://docs.moi.technology/docs/build/packages/js-moi-sdk",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sarvalabs/js-moi-sdk.git"
+    "url": "git://github.com/zenz-solutions/js-moi-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/sarvalabs/js-moi-sdk/issues"
+    "url": "https://github.com/zenz-solutions/js-moi-sdk/issues"
   },
   "keywords": [
     "moichain",
@@ -28,7 +31,7 @@
     "buffer": "^6.0.3",
     "crypto": "npm:crypto-browserify",
     "hdkey": "^2.1.0",
-    "js-moi-utils": "0.6.1-sephorum",
+    "@zenz-solutions/js-moi-utils": "0.6.1-sephorum",
     "process": "^0.11.10",
     "secp256k1": "^5.0.0",
     "stream": "npm:stream-browserify"

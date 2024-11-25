@@ -1,19 +1,22 @@
 {
-  "name": "js-moi-utils",
+  "name": "@zenz-solutions/js-moi-utils",
   "version": "0.6.1-sephorum",
   "description": "Collection of utility functions used in js-moi-sdk.",
   "main": "./lib.cjs/index.js",
   "module": "./lib.esm/index.js",
+  "publishConfig": {
+    "@zenz-solutions:registry": "https://npm.pkg.github.com"
+   },
   "scripts": {
     "compile": "tsc -b tsconfig.json"
   },
   "homepage": "https://docs.moi.technology/docs/build/packages/js-moi-sdk",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sarvalabs/js-moi-sdk.git"
+    "url": "git://github.com/zenz-solutions/js-moi-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/sarvalabs/js-moi-sdk/issues"
+    "url": "https://github.com/zenz-solutions/js-moi-sdk/issues"
   },
   "keywords": [
     "moichain",
